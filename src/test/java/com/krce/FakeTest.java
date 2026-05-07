@@ -62,6 +62,6 @@ public class FakeTest {
                 get("/categories/{id}").
                 then().
                 statusCode(200).
-                body("size()", Matchers.equalTo(1));
+                body("id", Matchers.equalTo(1));
     }
 }
